@@ -95,6 +95,12 @@ body[data-by-page-type="article"] { --by-glow-strength: .5; }
 .by-page--home { padding-top: 2.2rem; }
 .by-home-shell { margin: 0 auto; max-width: var(--by-content-width); width: 100%; }
 .by-home-content { padding-top: 3.35rem; }
+.by-portal-hero { padding: 3.4rem 0 3rem; }
+.by-portal-eyebrow { color: var(--by-accent); font-family: var(--md-code-font-family); font-size: .62rem; font-weight: 600; letter-spacing: .09em; margin: 0 0 .8rem; }
+.by-portal-hero h1 { border: 0; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -.04em; line-height: 1.12; margin: 0 0 1rem; padding: 0; }
+.by-portal-lead { color: var(--by-muted); font-size: .86rem; line-height: 1.75; margin: 0; max-width: 42rem; }
+.by-portal-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.45rem; }
+.by-comments { border-top: 1px solid var(--by-border); margin-top: 3rem; padding-top: 2rem; }
 
 /* 7. Banner */
 .by-banner { height: clamp(9rem, 14vw, 12rem); margin: 0 0 1.1rem; overflow: hidden; }

@@ -72,6 +72,16 @@
       });
     }
 
+    if (window.mermaid) {
+      window.mermaid.initialize({
+        startOnLoad: false,
+        securityLevel: "strict",
+        theme: document.body.getAttribute("data-md-color-scheme") === "slate" ? "dark" : "default"
+      });
+      const diagrams = document.querySelectorAll(".mermaid:not([data-processed])");
+      if (diagrams.length) window.mermaid.run({ nodes: diagrams });
+    }
+
     window.requestAnimationFrame(() => {
       window.requestAnimationFrame(() => page.classList.add("is-page-ready"));
     });

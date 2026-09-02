@@ -1,42 +1,73 @@
 ---
 template: home.html
 page_type: home
+title: 柏源 Infra · AI Infrastructure Wiki
 hide:
   - navigation
   - toc
   - footer
 ---
 
-<div class="by-home-content">
-  <section class="home-about" aria-labelledby="about-title">
-    <h1 id="about-title">柏源 Infra <span>| About</span></h1>
-    <div class="home-about__body">
-      <div class="home-mark"><img src="assets/branding/about-infra.svg" alt="由服务器与网络节点构成的抽象标志"></div>
-      <div class="home-about__copy">
-        <p>这里主要整理 AI Infra、HPC、GPU、高速网络、存储和大模型基础设施相关技术资料。</p>
-        <p>也会记录实际项目中的架构设计、硬件选型、配置取舍、模型部署和工程实践。</p>
-        <p class="home-tags">AI Infra · HPC · GPU · RDMA · Storage · LLM</p>
-      </div>
-    </div>
-  </section>
+<section class="by-portal-hero" aria-labelledby="portal-title">
+  <p class="by-portal-eyebrow">AI INFRASTRUCTURE · ENGINEERING KNOWLEDGE BASE</p>
+  <h1 id="portal-title">柏源 Infra · AI Infrastructure Wiki</h1>
+  <p class="by-portal-lead">面向智算中心、异构集群、RoCEv2 / InfiniBand 高速网络与大模型工程化的架构设计、配置取舍和实战知识库。</p>
+  <div class="by-portal-actions">
+    <a href="articles/" class="md-button md-button--primary">浏览文章库</a>
+    <a href="network/" class="md-button">高速网络专题</a>
+  </div>
+</section>
 
-  <section class="home-section" id="topics" aria-labelledby="topics-title">
-    <h2 id="topics-title">技术方向 <span>| Topics</span></h2>
-    <div class="home-topics">
-      <a href="server/"><h3>服务器架构</h3><p>CPU · 内存 · PCIe · 供电 · GPU 服务器形态</p></a>
-      <a href="gpu/"><h3>GPU 与互联</h3><p>PCIe · OAM · 显存 · NVLink · NVSwitch</p></a>
-      <a href="network/"><h3>高速网络</h3><p>RDMA · InfiniBand · RoCE · Fat Tree</p></a>
-      <a href="storage/"><h3>存储与数据</h3><p>并行存储 · 分布式存储 · NVMe</p></a>
-      <a href="hpc/"><h3>高性能计算</h3><p>MPI · 调度 · NUMA · 并行计算</p></a>
-      <a href="llm/"><h3>大模型基础设施</h3><p>vLLM · SGLang · TP · PP · DP · EP · KV Cache</p></a>
-      <a href="project/"><h3>智算项目实践</h3><p>服务器选型 · 网络规划 · 机柜供电 · 部署实施</p></a>
-    </div>
-  </section>
+## 知识矩阵
 
-  <section class="home-section home-latest" aria-labelledby="latest-title">
-    <h2 id="latest-title">最近整理 <span>| Latest</span></h2>
-    <div class="home-article-list" role="list">
-      <!-- AUTO_LATEST -->
-    </div>
-  </section>
+<div class="grid cards" markdown>
+
+-   **L0 / L1 算力硬件与供电**
+
+    GPU 服务器形态、CPU / NUMA、PCIe、OAM、GPU 互联、整机功率预算与冗余供电。
+
+    [:octicons-arrow-right-24: 物理与供电](server/index.md) · [:octicons-arrow-right-24: 算力与 GPU](gpu/index.md)
+
+-   **L2 高速智算网络**
+
+    RDMA、RoCEv2、InfiniBand、无损以太网、拥塞控制与 Spine-Leaf 集群拓扑。
+
+    [:octicons-arrow-right-24: 进入网络专题](network/index.md)
+
+-   **L3 高性能并行存储**
+
+    并行文件系统、分布式存储、元数据路径、聚合带宽与 AI 数据流水线。
+
+    [:octicons-arrow-right-24: 进入存储专题](storage/index.md)
+
+-   **L4 / L5 调度运维与大模型工程**
+
+    MPI、集群调度、故障定位，以及 vLLM、SGLang、并行策略与 KV Cache。
+
+    [:octicons-arrow-right-24: 调度运维](hpc/index.md) · [:octicons-arrow-right-24: 大模型工程](llm/index.md)
+
+</div>
+
+## 推荐阅读路径
+
+=== "新工程师入门"
+
+    1. 从 [服务器与供电](server/index.md) 理解智算节点的物理边界。
+    2. 阅读 [GPU 与互联](gpu/index.md) 掌握 PCIe、OAM、NVLink 与 NVSwitch。
+    3. 进入 [高速智算网络](network/index.md) 建立 RDMA、RoCEv2 与 IB 的整体认知。
+
+=== "集群排障速查 (Troubleshooting)"
+
+    1. 检查节点功率、温度、PCIe 链路与 GPU 健康状态。
+    2. 沿 [网络专题](network/index.md) 排查队列、拥塞、丢包、ECN / PFC 与 RDMA 路径。
+    3. 结合 [存储](storage/index.md) 和 [调度运维](hpc/index.md) 判断瓶颈是否来自数据或资源分配。
+
+=== "智算项目建设与落地"
+
+    按 [服务器选型](project/server-selection.md)、[网络设计](project/network-design.md)、[供电与机柜](project/power-and-rack.md) 和 [部署实施](project/deployment.md) 的顺序推进方案设计与交付验收。
+
+## 最近整理
+
+<div class="home-article-list" role="list">
+  <!-- AUTO_LATEST -->
 </div>

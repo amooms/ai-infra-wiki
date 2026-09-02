@@ -8,6 +8,7 @@
       <main class="by-article md-typeset">
         {% include "partials/article-meta.html" %}
         {{ page.content }}
+        {% include "partials/comments.html" %}
       </main>
       {% if page.toc %}
         <aside class="by-article-toc" aria-label="本页目录">

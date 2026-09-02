@@ -20,6 +20,17 @@ CATEGORIES = (
     ("project", "智算项目", "Projects"),
 )
 
+NAV_LABELS = {
+    "server": "L0 物理与供电", "gpu": "L1 算力与GPU", "network": "L2 智算网络",
+    "storage": "L3 存储", "hpc": "L4 调度运维", "llm": "L5 大模型工程", "project": "项目实战",
+}
+
+DEFAULT_TAGS = {
+    "server": ["L0", "服务器", "供电"], "gpu": ["L1", "GPU", "异构计算"],
+    "network": ["L2", "智算网络"], "storage": ["L3", "并行存储"],
+    "hpc": ["L4", "HPC", "调度运维"], "llm": ["L5", "大模型工程"], "project": ["项目实战"],
+}
+
 CATALOG: dict[str, list[dict[str, object]]] = {}
 
 
@@ -75,10 +86,10 @@ def on_config(config):
     CATALOG = _scan(Path(config["docs_dir"]))
 
     nav: list[dict[str, object]] = [{"首页": "index.md"}, {"文章库": "articles/index.md"}]
-    for slug, label, _label_en in CATEGORIES:
+    for slug, _label, _label_en in CATEGORIES:
         children: list[dict[str, str]] = [{"概览": f"{slug}/index.md"}]
         children.extend({str(article["title"]): str(article["src_uri"])} for article in CATALOG[slug])
-        nav.append({label: children})
+        nav.append({NAV_LABELS[slug]: children})
     config["nav"] = nav
     return config
 
@@ -152,6 +163,7 @@ def on_page_markdown(markdown, page, config, files):
             page.meta.setdefault("page_type", "article")
             page.meta.setdefault("category", slug)
             page.meta.setdefault("category_label", label)
+            page.meta.setdefault("tags", DEFAULT_TAGS[slug])
             break
 
     if src_uri == "index.md":
