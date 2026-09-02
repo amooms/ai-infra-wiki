@@ -109,10 +109,12 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/calculators.css
 
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
   - javascripts/extra.js
+  - javascripts/calculators.js
 
 nav:
   - 首页: index.md
@@ -145,6 +147,9 @@ nav:
       - 并行策略: llm/parallel.md
       - SGLang: llm/sglang.md
       - vLLM: llm/vllm.md
+  - 🛠️ 智算工具箱:
+      - 大模型显存与卡数估算器: tools/llm-memory-calculator.md
+      - 智算网络收敛比估算器: tools/network-oversubscription-calculator.md
   - 项目实战:
       - 概览: project/index.md
       - 部署实施: project/deployment.md

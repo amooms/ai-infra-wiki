@@ -87,6 +87,11 @@ def on_config(config):
 
     nav: list[dict[str, object]] = [{"首页": "index.md"}, {"文章库": "articles/index.md"}]
     for slug, _label, _label_en in CATEGORIES:
+        if slug == "project":
+            nav.append({"🛠️ 智算工具箱": [
+                {"大模型显存与卡数估算器": "tools/llm-memory-calculator.md"},
+                {"智算网络收敛比估算器": "tools/network-oversubscription-calculator.md"},
+            ]})
         children: list[dict[str, str]] = [{"概览": f"{slug}/index.md"}]
         children.extend({str(article["title"]): str(article["src_uri"])} for article in CATALOG[slug])
         nav.append({NAV_LABELS[slug]: children})
