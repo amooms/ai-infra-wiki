@@ -6,6 +6,7 @@ hide:
   - navigation
   - toc
   - footer
+  - reading-time
 ---
 
 <section class="by-portal-hero" aria-labelledby="portal-title">
@@ -26,25 +27,25 @@ hide:
 
     GPU 服务器形态、CPU / NUMA、PCIe、OAM、GPU 互联、整机功率预算与冗余供电。
 
-    [:octicons-arrow-right-24: 物理与供电](server/index.md) · [:octicons-arrow-right-24: 算力与 GPU](gpu/index.md)
+    [→ 物理与供电](server/index.md) · [→ 算力与 GPU](gpu/index.md)
 
 -   **L2 高速智算网络**
 
     RDMA、RoCEv2、InfiniBand、无损以太网、拥塞控制与 Spine-Leaf 集群拓扑。
 
-    [:octicons-arrow-right-24: 进入网络专题](network/index.md)
+    [→ 进入网络专题](network/index.md)
 
 -   **L3 高性能并行存储**
 
     并行文件系统、分布式存储、元数据路径、聚合带宽与 AI 数据流水线。
 
-    [:octicons-arrow-right-24: 进入存储专题](storage/index.md)
+    [→ 进入存储专题](storage/index.md)
 
 -   **L4 / L5 调度运维与大模型工程**
 
     MPI、集群调度、故障定位，以及 vLLM、SGLang、并行策略与 KV Cache。
 
-    [:octicons-arrow-right-24: 调度运维](hpc/index.md) · [:octicons-arrow-right-24: 大模型工程](llm/index.md)
+    [→ 调度运维](hpc/index.md) · [→ 大模型工程](llm/index.md)
 
 </div>
 
