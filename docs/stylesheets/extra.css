@@ -19,11 +19,11 @@
   background: radial-gradient(34rem circle at var(--glow-x, 50%) var(--glow-y, 15%), var(--infra-glow), transparent 68%);
   content: ""; inset: -3rem -6rem; pointer-events: none; position: absolute; z-index: -1;
 }
-.infra-hero { max-width: 54rem; padding: 4.2rem 0 3rem; animation: infra-enter .45s ease-out both; }
+.infra-hero { max-width: 50rem; padding: 3rem 0 2.4rem; animation: infra-enter .45s ease-out both; }
 .infra-kicker { color: var(--md-primary-fg-color); font-size: .68rem; font-weight: 700; letter-spacing: .16em; }
-.infra-hero h1 { font-size: clamp(2.8rem, 7vw, 5.4rem); font-weight: 760; letter-spacing: -.055em; line-height: 1; margin: .55rem 0 1rem; }
+.infra-hero h1 { font-size: clamp(2.3rem, 4.5vw, 4rem); font-weight: 740; letter-spacing: -.045em; line-height: 1.08; margin: .6rem 0 .85rem; }
 .infra-topics { color: var(--md-default-fg-color--light); font-family: var(--md-code-font-family); font-size: .8rem; }
-.infra-lead { font-size: 1.05rem; line-height: 1.8; max-width: 44rem; }
+.infra-lead { font-size: .92rem; line-height: 1.75; max-width: 40rem; }
 .infra-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .md-typeset .infra-card {
   background: var(--infra-surface); border: 1px solid var(--infra-border); border-radius: .8rem;
@@ -31,7 +31,7 @@
   transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
 }
 .md-typeset .infra-card:hover { border-color: color-mix(in srgb, var(--md-primary-fg-color) 48%, transparent); box-shadow: 0 .8rem 2rem rgba(0,0,0,.09); transform: translateY(-3px); }
-.infra-card .twemoji { color: var(--md-primary-fg-color); font-size: 1.35rem; }
+.infra-card .infra-icon { align-items: center; background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent); border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 18%, transparent); border-radius: .45rem; color: var(--md-primary-fg-color); display: inline-flex; font-family: var(--md-code-font-family); font-size: 1rem; height: 2rem; justify-content: center; width: 2rem; }
 .infra-card h2 { border: 0; font-size: 1rem; margin: .8rem 0 .35rem; padding: 0; }
 .infra-card p { color: var(--md-default-fg-color--light); font-size: .72rem; min-height: 3.4em; }
 .infra-card > span:last-child { color: var(--md-primary-fg-color); font-size: .68rem; font-weight: 600; }
