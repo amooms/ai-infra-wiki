@@ -1,3 +1,10 @@
+---
+template: article.html
+page_type: article
+category: storage
+category_label: 存储
+---
+
 # 分布式存储
 
 分布式存储通过跨节点的数据组织与冗余提供容量和可用性。副本、纠删码、一致性与恢复速度需要结合业务目标权衡。

@@ -1,3 +1,10 @@
+---
+template: article.html
+page_type: article
+category: project
+category_label: 智算项目
+---
+
 # 网络设计
 
 网络设计需区分计算、存储、管理和带外网络，明确流量模型、端口密度、收敛比、故障域、地址规划与运维方式。

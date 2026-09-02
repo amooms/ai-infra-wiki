@@ -1,14 +1,16 @@
-# HPC
+---
+template: category.html
+page_type: category
+title: HPC
+title_en: High Performance Computing
+category: hpc
+category_icon: HC
+description: 并行通信、作业调度与高性能计算集群基础。
+---
 
-HPC 关注计算、通信和 I/O 的协同效率。本分类记录并行编程、作业调度与集群运行中的基础问题。
+## 全部文章 <small>| Articles</small>
 
-## 主要内容
-
-- MPI 通信
-- 资源管理与作业调度
-- 性能定位与系统亲和性
-
-## 推荐阅读
-
-- [MPI](mpi.md)
-- [作业调度](scheduling.md)
+<div class="by-archive-group"><h3>现有条目</h3><div class="by-file-list">
+  <a href="mpi/"><span>MPI</span><time>—</time></a>
+  <a href="scheduling/"><span>作业调度</span><time>—</time></a>
+</div></div>

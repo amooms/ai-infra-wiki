@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title description">
+  <title id="title">柏源 Infra 抽象标志</title>
+  <desc id="description">由服务器机框和相连节点构成的黑白几何线框</desc>
+  <rect x="22" y="30" width="82" height="112" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+  <path d="M22 66h82M22 104h82" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <g fill="currentColor"><circle cx="38" cy="48" r="3"/><circle cx="38" cy="84" r="3"/><circle cx="38" cy="122" r="3"/></g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M104 52h26l17 20v42"/><path d="M104 86h43"/><path d="M104 122h26l17-8"/>
+    <circle cx="148" cy="72" r="7"/><circle cx="148" cy="114" r="7"/><circle cx="148" cy="86" r="5"/>
+  </g>
+</svg>

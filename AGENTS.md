@@ -10,3 +10,7 @@
 - 网站使用 Material for MkDocs，并由 GitHub Actions 部署到 GitHub Pages。
 - 大规模修改前先执行 `git status`，避免覆盖未提交工作。
 - 修改后至少执行 `python -m mkdocs build --strict`，并修复警告、断链和配置错误。
+- 网站页面分为 Home、Category、Article 三类，分别使用 `home.html`、`category.html`、`article.html`。
+- Category 文件只负责分类说明、文章索引和入口，不在分类首页堆叠大段百科内容。
+- 新技术文章必须使用 Article 规范，front matter 至少包含 `template: article.html`、`page_type: article`、`category`；确认后再填写 `date` 和 `description`，不得编造。
+- 新增文章后依次：判断 category、填写 front matter、更新分类索引、更新 `docs/articles/index.md`、检查 `nav`、检查链接、执行严格构建。

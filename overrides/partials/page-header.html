@@ -1,0 +1,5 @@
+<header class="by-page-header">
+  {% if page.meta.category_icon %}<span class="by-page-icon" aria-hidden="true">{{ page.meta.category_icon }}</span>{% endif %}
+  <h1>{{ page.meta.title or page.title }}{% if page.meta.title_en %} <small>| {{ page.meta.title_en }}</small>{% endif %}</h1>
+  {% if page.meta.description %}<p>{{ page.meta.description }}</p>{% endif %}
+</header>

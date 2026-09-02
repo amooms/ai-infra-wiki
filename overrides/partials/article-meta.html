@@ -1,0 +1,5 @@
+<div class="by-article-meta">
+  {% if page.meta.category_label %}<a href="{{ (page.meta.category ~ '/') | url }}">{{ page.meta.category_label }}</a>{% endif %}
+  {% if page.meta.date %}<time datetime="{{ page.meta.date }}">{{ page.meta.date }}</time>{% endif %}
+  {% if page.meta.tags %}<span>{{ page.meta.tags | join(' · ') }}</span>{% endif %}
+</div>

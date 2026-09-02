@@ -1,3 +1,10 @@
+---
+template: article.html
+page_type: article
+category: storage
+category_label: 存储
+---
+
 # 并行存储
 
 并行存储通过多个服务节点或存储目标提供聚合带宽。设计时应根据 I/O 模式区分顺序吞吐、随机访问和元数据压力。

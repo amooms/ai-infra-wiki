@@ -1,3 +1,10 @@
+---
+template: article.html
+page_type: article
+category: gpu
+category_label: GPU
+---
+
 # 计算精度
 
 FP32、TF32、FP16、BF16、FP8 与整数格式在数值范围、精度、吞吐和硬件支持上各有取舍。实际能力以具体 GPU 与软件版本为准。

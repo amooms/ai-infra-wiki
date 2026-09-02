@@ -1,3 +1,10 @@
+---
+template: article.html
+page_type: article
+category: network
+category_label: 高速网络
+---
+
 # 集群拓扑
 
 拓扑设计需要在带宽收敛、路径冗余、故障域、布线复杂度与成本之间取舍，并与训练或推理通信模式匹配。

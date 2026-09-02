@@ -1,3 +1,10 @@
+---
+template: article.html
+page_type: article
+category: llm
+category_label: 大模型部署
+---
+
 # vLLM
 
 vLLM 是面向大模型推理与服务的开源引擎。部署时应根据模型、硬件和流量特征验证显存占用、并发、吞吐与时延。

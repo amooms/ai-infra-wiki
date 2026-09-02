@@ -1,3 +1,10 @@
+---
+template: article.html
+page_type: article
+category: project
+category_label: 智算项目
+---
+
 # 服务器选型
 
 服务器选型应从工作负载和系统边界出发，核对计算、显存、内存、PCIe、网卡、存储、功耗、散热及交付条件。

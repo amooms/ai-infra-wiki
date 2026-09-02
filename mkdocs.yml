@@ -6,9 +6,11 @@ repo_name: amooms/ai-infra-wiki
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
+  logo: assets/branding/logo.svg
+  favicon: assets/branding/favicon.png
   icon:
-    logo: material/server-network
     repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme)"
@@ -74,6 +76,7 @@ extra_javascript:
 
 nav:
   - 首页: index.md
+  - 文章库: articles/index.md
   - 服务器:
       - 概览: server/index.md
       - CPU 与内存: server/cpu-memory.md

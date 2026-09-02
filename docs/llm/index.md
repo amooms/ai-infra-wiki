@@ -1,17 +1,18 @@
-# 大模型部署
+---
+template: category.html
+page_type: category
+title: 大模型部署
+title_en: LLM Infrastructure
+category: llm
+category_icon: LM
+description: 推理引擎、并行策略、KV Cache 与多机部署。
+---
 
-大模型服务需要在吞吐、首 Token 时延、显存占用、并行策略和可运维性之间平衡。
+## 全部文章 <small>| Articles</small>
 
-## 主要内容
-
-- vLLM 与 SGLang
-- TP、PP、DP 与 EP
-- KV Cache 管理
-- 多机推理通信
-
-## 推荐阅读
-
-- [vLLM](vllm.md)
-- [SGLang](sglang.md)
-- [并行策略](parallel.md)
-- [KV Cache](kv-cache.md)
+<div class="by-archive-group"><h3>现有条目</h3><div class="by-file-list">
+  <a href="vllm/"><span>vLLM</span><time>—</time></a>
+  <a href="sglang/"><span>SGLang</span><time>—</time></a>
+  <a href="parallel/"><span>并行策略</span><time>—</time></a>
+  <a href="kv-cache/"><span>KV Cache</span><time>—</time></a>
+</div></div>

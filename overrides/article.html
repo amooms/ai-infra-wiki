@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block tabs %}{% endblock %}
+{% block site_nav %}{% endblock %}
+{% block container %}
+  <div class="by-page by-page--article">
+    <div class="by-wide-shell">{% include "partials/site-nav.html" %}</div>
+    <div class="by-article-layout">
+      <main class="by-article md-typeset">
+        {% include "partials/article-meta.html" %}
+        {{ page.content }}
+      </main>
+      {% if page.toc %}
+        <aside class="by-article-toc" aria-label="本页目录">
+          <strong>本页目录</strong>
+          {% include "partials/toc.html" %}
+        </aside>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

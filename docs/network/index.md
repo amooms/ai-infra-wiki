@@ -1,17 +1,18 @@
-# 高速网络
+---
+template: category.html
+page_type: category
+title: 高速网络
+title_en: Network
+category: network
+category_icon: NW
+description: RDMA、InfiniBand、RoCE、通信模式与集群网络拓扑。
+---
 
-AI 与 HPC 集群中的网络设计不只是比较端口速率，还涉及 RDMA、通信模式、拓扑、时延、拥塞控制和跨节点通信。
+## 全部文章 <small>| Articles</small>
 
-## 主要内容
-
-- RDMA、InfiniBand 与 RoCE
-- Fat Tree 与其他集群拓扑
-- GPUDirect RDMA
-- 200G / 400G / 800G 网络
-
-## 推荐阅读
-
-- [RDMA](rdma.md)
-- [InfiniBand](infiniband.md)
-- [RoCE](roce.md)
-- [集群拓扑](topology.md)
+<div class="by-archive-group"><h3>现有条目</h3><div class="by-file-list">
+  <a href="rdma/"><span>RDMA</span><time>—</time></a>
+  <a href="infiniband/"><span>InfiniBand</span><time>—</time></a>
+  <a href="roce/"><span>RoCE</span><time>—</time></a>
+  <a href="topology/"><span>集群拓扑</span><time>—</time></a>
+</div></div>

@@ -1,17 +1,18 @@
-# 智算项目
+---
+template: category.html
+page_type: category
+title: 智算项目
+title_en: Projects
+category: project
+category_icon: DC
+description: 服务器选型、网络、供电、机柜与部署交付。
+---
 
-智算项目需要把服务器、网络、存储、供配电、制冷、机柜和软件交付放在同一套约束中评估。
+## 全部文章 <small>| Articles</small>
 
-## 主要内容
-
-- 服务器选型与数量规划
-- 高速网络与管理网络设计
-- 机柜、供电、制冷与承重
-- 上架、联调、验收和运维交接
-
-## 推荐阅读
-
-- [服务器选型](server-selection.md)
-- [网络设计](network-design.md)
-- [供电与机柜](power-and-rack.md)
-- [部署实施](deployment.md)
+<div class="by-archive-group"><h3>现有条目</h3><div class="by-file-list">
+  <a href="server-selection/"><span>服务器选型</span><time>—</time></a>
+  <a href="network-design/"><span>网络设计</span><time>—</time></a>
+  <a href="power-and-rack/"><span>供电与机柜</span><time>—</time></a>
+  <a href="deployment/"><span>部署实施</span><time>—</time></a>
+</div></div>

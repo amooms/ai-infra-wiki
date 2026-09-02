@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block tabs %}{% endblock %}
+{% block site_nav %}{% endblock %}
+{% block container %}
+  <div class="by-page by-page--home">
+    <div class="by-wide-shell">
+      <figure class="by-banner"><img src="{{ 'assets/branding/home-banner.svg' | url }}" alt="浅色抽象线条横幅"></figure>
+      {% include "partials/site-nav.html" %}
+    </div>
+    <main class="by-home-shell md-typeset">{{ page.content }}</main>
+  </div>
+{% endblock %}
+{% block footer %}{% endblock %}

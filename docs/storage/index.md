@@ -1,14 +1,16 @@
-# 存储
+---
+template: category.html
+page_type: category
+title: 存储
+title_en: Storage
+category: storage
+category_icon: ST
+description: 并行文件系统、分布式存储与 AI 数据通路。
+---
 
-AI 数据通路需要同时考虑容量、吞吐、元数据、并发访问、小文件行为、可靠性与数据生命周期。
+## 全部文章 <small>| Articles</small>
 
-## 主要内容
-
-- 并行文件系统
-- 分布式存储
-- 数据集、Checkpoint 与模型权重
-
-## 推荐阅读
-
-- [并行存储](parallel-storage.md)
-- [分布式存储](distributed-storage.md)
+<div class="by-archive-group"><h3>现有条目</h3><div class="by-file-list">
+  <a href="parallel-storage/"><span>并行存储</span><time>—</time></a>
+  <a href="distributed-storage/"><span>分布式存储</span><time>—</time></a>
+</div></div>

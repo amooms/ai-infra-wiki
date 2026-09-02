@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 240" role="img" aria-labelledby="title description">
+  <title id="title">柏源 Infra 抽象横幅</title>
+  <desc id="description">由淡灰蓝线条、波纹和几何节点组成的低饱和横幅</desc>
+  <rect width="1600" height="240" fill="#f7f8f8"/>
+  <path d="M-40 176C170 92 334 208 546 124S908 78 1125 134s346 25 535-58" fill="none" stroke="#dfe5e8" stroke-width="1.5"/>
+  <path d="M-30 198C160 126 350 226 572 150S934 102 1154 154s346 26 506-32" fill="none" stroke="#e8ecee"/>
+  <path d="M116 50h322l84 54h268l92-42h340l112 74h182" fill="none" stroke="#d9e1e5" stroke-width="1.25"/>
+  <path d="M240 26v58m0-29h178m616 116v-54m0 27h210" fill="none" stroke="#e3e8ea"/>
+  <g fill="#f7f8f8" stroke="#cad6dc" stroke-width="1.25">
+    <circle cx="240" cy="55" r="5"/><circle cx="522" cy="104" r="5"/><circle cx="882" cy="62" r="5"/>
+    <circle cx="1122" cy="135" r="5"/><circle cx="1334" cy="136" r="5"/>
+  </g>
+  <g fill="#dce7ec" opacity=".65">
+    <circle cx="128" cy="84" r="2"/><circle cx="726" cy="42" r="2"/><circle cx="980" cy="192" r="2"/><circle cx="1468" cy="56" r="2"/>
+  </g>
+</svg>

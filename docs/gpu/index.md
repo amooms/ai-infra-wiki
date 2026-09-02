@@ -1,15 +1,17 @@
-# GPU
+---
+template: category.html
+page_type: category
+title: GPU
+title_en: GPU
+category: gpu
+category_icon: GP
+description: GPU 形态、计算精度、显存与设备互联架构。
+---
 
-本分类整理 GPU 形态、计算精度、显存与互联方式，重点关注不同架构对训练和推理系统设计的影响。
+## 全部文章 <small>| Articles</small>
 
-## 主要内容
-
-- PCIe 与 OAM
-- NVLink 与 NVSwitch
-- 显存容量、带宽与计算精度
-
-## 推荐阅读
-
-- [PCIe 与 OAM](pcie-oam.md)
-- [GPU 互联](interconnect.md)
-- [计算精度](precision.md)
+<div class="by-archive-group"><h3>现有条目</h3><div class="by-file-list">
+  <a href="pcie-oam/"><span>PCIe 与 OAM</span><time>—</time></a>
+  <a href="interconnect/"><span>GPU 互联</span><time>—</time></a>
+  <a href="precision/"><span>计算精度</span><time>—</time></a>
+</div></div>

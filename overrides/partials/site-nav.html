@@ -1,0 +1,11 @@
+<nav class="by-site-nav" aria-label="站点导航">
+  <a{% if page.is_homepage %} class="is-active"{% endif %} href="{{ '' | url }}"><span>首页</span><small>Home</small></a>
+  <a{% if page.meta.page_type == 'articles' %} class="is-active"{% endif %} href="{{ 'articles/' | url }}"><span>文章库</span><small>Articles</small></a>
+  <a{% if page.meta.category == 'server' %} class="is-active"{% endif %} href="{{ 'server/' | url }}"><span>服务器</span><small>Server</small></a>
+  <a{% if page.meta.category == 'gpu' %} class="is-active"{% endif %} href="{{ 'gpu/' | url }}"><span>GPU</span><small>GPU</small></a>
+  <a{% if page.meta.category == 'network' %} class="is-active"{% endif %} href="{{ 'network/' | url }}"><span>高速网络</span><small>Network</small></a>
+  <a{% if page.meta.category == 'storage' %} class="is-active"{% endif %} href="{{ 'storage/' | url }}"><span>存储</span><small>Storage</small></a>
+  <a{% if page.meta.category == 'hpc' %} class="is-active"{% endif %} href="{{ 'hpc/' | url }}"><span>HPC</span><small>HPC</small></a>
+  <a{% if page.meta.category == 'llm' %} class="is-active"{% endif %} href="{{ 'llm/' | url }}"><span>大模型</span><small>LLM</small></a>
+  <a{% if page.meta.category == 'project' %} class="is-active"{% endif %} href="{{ 'project/' | url }}"><span>智算项目</span><small>Projects</small></a>
+</nav>
