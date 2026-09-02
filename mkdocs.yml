@@ -1,0 +1,111 @@
+site_name: 柏源 Infra
+site_description: AI Infra / HPC / GPU / 大模型基础设施技术知识库
+site_url: https://amooms.github.io/ai-infra-wiki/
+repo_url: https://github.com/amooms/ai-infra-wiki
+repo_name: amooms/ai-infra-wiki
+
+theme:
+  name: material
+  language: zh
+  icon:
+    logo: material/server-network
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 跟随系统
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search:
+      lang: [zh, en]
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+
+nav:
+  - 首页: index.md
+  - 服务器:
+      - 概览: server/index.md
+      - CPU 与内存: server/cpu-memory.md
+      - GPU 服务器: server/gpu-server.md
+  - GPU:
+      - 概览: gpu/index.md
+      - PCIe 与 OAM: gpu/pcie-oam.md
+      - GPU 互联: gpu/interconnect.md
+      - 计算精度: gpu/precision.md
+  - 高速网络:
+      - 概览: network/index.md
+      - RDMA: network/rdma.md
+      - InfiniBand: network/infiniband.md
+      - RoCE: network/roce.md
+      - 集群拓扑: network/topology.md
+  - 存储:
+      - 概览: storage/index.md
+      - 并行存储: storage/parallel-storage.md
+      - 分布式存储: storage/distributed-storage.md
+  - HPC:
+      - 概览: hpc/index.md
+      - MPI: hpc/mpi.md
+      - 作业调度: hpc/scheduling.md
+  - 大模型部署:
+      - 概览: llm/index.md
+      - vLLM: llm/vllm.md
+      - SGLang: llm/sglang.md
+      - 并行策略: llm/parallel.md
+      - KV Cache: llm/kv-cache.md
+  - 智算项目:
+      - 概览: project/index.md
+      - 服务器选型: project/server-selection.md
+      - 网络设计: project/network-design.md
+      - 供电与机柜: project/power-and-rack.md
+      - 部署实施: project/deployment.md
