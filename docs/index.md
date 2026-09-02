@@ -36,10 +36,7 @@ hide:
   <section class="home-section home-latest" aria-labelledby="latest-title">
     <h2 id="latest-title">最近整理 <span>| Latest</span></h2>
     <div class="home-article-list" role="list">
-      <a href="server/" role="listitem"><span>GPU 服务器为什么会配置多路电源？</span><small>服务器</small><time datetime="2026-08-30">2026-08-30</time></a>
-      <a href="gpu/" role="listitem"><span>PCIe、NVLink、NVSwitch 到底差在哪？</span><small>GPU</small><time datetime="2026-08-28">2026-08-28</time></a>
-      <a href="gpu/" role="listitem"><span>训练少、推理多，还需要高速 GPU 互联吗？</span><small>GPU</small><time datetime="2026-08-26">2026-08-26</time></a>
-      <a href="project/" role="listitem"><span>有空机柜，为什么不代表服务器能够上架？</span><small>服务器</small><time datetime="2026-08-24">2026-08-24</time></a>
+      <!-- AUTO_LATEST -->
     </div>
   </section>
 </div>
