@@ -26,6 +26,23 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - uses: actions/configure-pages@v5
       - run: python -m mkdocs build --strict
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+      - name: Test and build Simulator
+        working-directory: apps/simulator
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm test
+          pnpm run build
+      - name: Merge Simulator into Pages artifact
+        run: |
+          mkdir -p site/tools/simulator
+          cp -a apps/simulator/dist/. site/tools/simulator/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

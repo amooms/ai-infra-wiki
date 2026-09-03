@@ -47,6 +47,12 @@ hide:
 
     [→ 调度运维](hpc/index.md) · [→ 大模型工程](llm/index.md)
 
+-   **AI Infra Simulator**
+
+    模型 × GPU × 显存 × KV Cache × 并行策略部署分析工具。
+
+    [→ 打开 Simulator](https://amooms.github.io/ai-infra-wiki/tools/simulator/)
+
 </div>
 
 ## 推荐阅读路径

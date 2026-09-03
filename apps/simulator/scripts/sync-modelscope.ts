@@ -1,0 +1,3 @@
+import { readFile, writeFile, mkdir } from 'node:fs/promises'; import path from 'node:path'
+const cache=path.resolve('scripts/.cache/modelscope.json')
+export async function syncModelScope(){ const token=process.env.MODELSCOPE_TOKEN; try{const response=await fetch('https://www.modelscope.cn/api/v1/models?page_number=1&page_size=100&tasks=text-generation',{headers:token?{Authorization:`Bearer ${token}`}:{}});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();await mkdir(path.dirname(cache),{recursive:true});await writeFile(cache,JSON.stringify(data,null,2));return data}catch(error){try{return JSON.parse(await readFile(cache,'utf8'))}catch{throw new Error(`ModelScope 同步失败且无缓存：${String(error)}`)}}}

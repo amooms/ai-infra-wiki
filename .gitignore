@@ -166,6 +166,11 @@ venv.bak/
 
 # mkdocs documentation
 /site
+/apps/simulator/node_modules/
+/apps/simulator/dist/
+/apps/simulator/scripts/.cache/
+/.pnpm-store/
+*.tsbuildinfo
 
 # mypy
 .mypy_cache/

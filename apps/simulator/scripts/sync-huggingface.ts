@@ -1,0 +1,3 @@
+import { readFile, writeFile, mkdir } from 'node:fs/promises'; import path from 'node:path'
+const cache=path.resolve('scripts/.cache/huggingface.json')
+export async function syncHuggingFace(){ const token=process.env.HF_TOKEN; try{const response=await fetch('https://huggingface.co/api/models?filter=text-generation&sort=lastModified&direction=-1&limit=100',{headers:token?{Authorization:`Bearer ${token}`}:{}});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();await mkdir(path.dirname(cache),{recursive:true});await writeFile(cache,JSON.stringify(data,null,2));return data}catch(error){try{return JSON.parse(await readFile(cache,'utf8'))}catch{throw new Error(`Hugging Face 同步失败且无缓存：${String(error)}`)}}}

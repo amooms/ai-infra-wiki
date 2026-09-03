@@ -1,5 +1,7 @@
 # 柏源 Infra 维护规则
 
+本仓库包含两个独立子系统：`docs/` 与 `overrides/` 是 MkDocs Knowledge Base；`apps/simulator/` 是 React AI Infra Simulator。两者共享一个 GitHub Pages artifact，但技术栈和维护规则不能混用。Simulator 规则见 `apps/simulator/AGENTS.md`。
+
 - 本仓库是 AI Infra 技术资料库，技术准确性优先于内容数量。
 - 所有文章位于 `docs/`；新文章必须先判断所属分类。
 - 新增或移动文章后无需手动维护导航；`hooks/auto_catalog.py` 会按目录自动生成导航、分类索引、文章库和首页最近整理。
