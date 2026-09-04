@@ -1,18 +1,86 @@
 [
   {
-    "model_id": "qwen2.5-7b-instruct", "model_family": "Qwen2.5", "display_name": "Qwen2.5-7B-Instruct", "organization": "Qwen",
-    "sources": ["HuggingFace"], "source_repo": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct", "architecture": "Qwen2ForCausalLM", "model_type": "instruct",
-    "parameters_total": 7615616512, "parameters_active": 7615616512, "num_layers": 28, "hidden_size": 3584, "intermediate_size": 18944,
-    "attention_heads": 28, "kv_heads": 4, "head_dim": 128, "context_length": 131072, "moe": false, "num_experts": null, "num_experts_per_token": null,
-    "native_dtype": "BF16", "last_modified": "2024-09-19", "data_source": "Official repository config.json; bundled seed snapshot", "confidence": "high", "last_verified": "2026-09-03", "featured": true,
-    "variants": [{ "variant_id": "qwen2.5-7b-bf16", "checkpoint": "Official BF16", "weight_dtype": "BF16", "compute_dtype": "BF16", "kv_cache_dtype": "BF16", "quantization_method": "none", "official": true, "source_repo": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct" }]
+    "model_id": "qwen2.5-7b-instruct",
+    "model_family": "Qwen2.5",
+    "display_name": "Qwen2.5-7B-Instruct",
+    "organization": "Qwen",
+    "sources": [
+      "HuggingFace"
+    ],
+    "source_repo": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+    "architecture": "Qwen2ForCausalLM",
+    "model_type": "instruct",
+    "parameters_total": 7615616512,
+    "parameters_active": 7615616512,
+    "num_layers": 28,
+    "hidden_size": 3584,
+    "intermediate_size": 18944,
+    "attention_heads": 28,
+    "kv_heads": 4,
+    "head_dim": 128,
+    "context_length": 131072,
+    "moe": false,
+    "num_experts": null,
+    "num_experts_per_token": null,
+    "native_dtype": "BF16",
+    "last_modified": "2024-09-19",
+    "data_source": "Official repository config.json; bundled seed snapshot",
+    "confidence": "high",
+    "last_verified": "2026-09-03",
+    "featured": true,
+    "variants": [
+      {
+        "variant_id": "qwen2.5-7b-bf16",
+        "checkpoint": "Official BF16",
+        "weight_dtype": "BF16",
+        "compute_dtype": "BF16",
+        "kv_cache_dtype": "BF16",
+        "quantization_method": "none",
+        "official": true,
+        "source_repo": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+      }
+    ]
   },
   {
-    "model_id": "mixtral-8x7b-instruct-v0.1", "model_family": "Mixtral", "display_name": "Mixtral-8x7B-Instruct-v0.1", "organization": "Mistral AI",
-    "sources": ["HuggingFace"], "source_repo": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1", "architecture": "MixtralForCausalLM", "model_type": "instruct",
-    "parameters_total": 46702792704, "parameters_active": 12900000000, "num_layers": 32, "hidden_size": 4096, "intermediate_size": 14336,
-    "attention_heads": 32, "kv_heads": 8, "head_dim": 128, "context_length": 32768, "moe": true, "num_experts": 8, "num_experts_per_token": 2,
-    "native_dtype": "BF16", "last_modified": "2023-12-11", "data_source": "Official repository config.json and model card; bundled seed snapshot", "confidence": "high", "last_verified": "2026-09-03", "featured": true,
-    "variants": [{ "variant_id": "mixtral-8x7b-bf16", "checkpoint": "Official BF16", "weight_dtype": "BF16", "compute_dtype": "BF16", "kv_cache_dtype": "BF16", "quantization_method": "none", "official": true, "source_repo": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1" }]
+    "model_id": "mixtral-8x7b-instruct-v0.1",
+    "model_family": "Mixtral",
+    "display_name": "Mixtral-8x7B-Instruct-v0.1",
+    "organization": "Mistral AI",
+    "sources": [
+      "HuggingFace"
+    ],
+    "source_repo": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "architecture": "MixtralForCausalLM",
+    "model_type": "instruct",
+    "parameters_total": 46702792704,
+    "parameters_active": 12900000000,
+    "num_layers": 32,
+    "hidden_size": 4096,
+    "intermediate_size": 14336,
+    "attention_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "context_length": 32768,
+    "moe": true,
+    "num_experts": 8,
+    "num_experts_per_token": 2,
+    "native_dtype": "BF16",
+    "last_modified": "2023-12-11",
+    "data_source": "Official repository config.json and model card; bundled seed snapshot",
+    "confidence": "high",
+    "last_verified": "2026-09-03",
+    "featured": true,
+    "variants": [
+      {
+        "variant_id": "mixtral-8x7b-bf16",
+        "checkpoint": "Official BF16",
+        "weight_dtype": "BF16",
+        "compute_dtype": "BF16",
+        "kv_cache_dtype": "BF16",
+        "quantization_method": "none",
+        "official": true,
+        "source_repo": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1"
+      }
+    ]
   }
 ]
